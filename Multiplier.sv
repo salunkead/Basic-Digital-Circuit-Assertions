@@ -1,4 +1,5 @@
 //assertion based verification of multiplier
+//Design Module
 module multilpier(input [3:0]a,b,input clk,rst,output reg [7:0]y);
   always_ff@(posedge clk)
     begin
@@ -11,6 +12,7 @@ module multilpier(input [3:0]a,b,input clk,rst,output reg [7:0]y);
     end
 endmodule
 
+//Property Module
 module propertyM(input [3:0]a,b,input clk,rst,input [7:0]y);
   property p;
     bit [3:0]a1,b1;
